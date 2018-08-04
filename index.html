@@ -9,6 +9,8 @@
   <!-- FONT  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS  -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"> -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
@@ -73,10 +75,20 @@
         <br>
         <h1 class="header center white-text text-lighten-2">Renée Bruff</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Web Developer</h5>
+          <h5 class="header col s12 light">Full Stack Web Developer</h5>
         </div>
         <div class="row center">
-          <a href="#" id="connect-button" class="waves-effect waves-light btn-large light-green darken-2">Connect with me!</a>
+          <a href="#modal1" id="connect-button" class="waves-effect waves-light btn-large light-green darken-2 modal-trigger">Connect with me!</a>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
         </div>
         <br>
         <br>
@@ -97,10 +109,13 @@
         <br>
         <br>
         <h3 class="center-align">- About me -</h3>
-        <p class="center-align">Lorem ipsum dolor amet bitters vaporware af, hell of irony beard craft beer. Neutra narwhal typewriter occupy hammock.
-          Keffiyeh helvetica flannel tote bag affogato cray banjo la croix shaman. Af viral portland tumeric hell of everyday
-          carry pug butcher trust fund. Jean shorts bespoke sriracha single-origin coffee schlitz ethical. Fingerstache church-key
-          hell of, hot chicken gastropub narwhal neutra glossier wolf kale chips YOLO tofu palo santo.</p>
+        <p class="center-align">I am a full stack web developer with a background in Applied science and retail management. I love working within
+          diverse teams leveraging agile development methodology as well as working independently. Using my research skills,
+          enthusiasm for experimenting, and knack for problem solving I continuously reenforce proficiency in HTML5, CSS,
+          JavaScript, JQuery, Node.js, React.js, MySQL/Sequelize, MongoDB, Bootstrap, and more.
+          <br> I try to merge the communication, time management, and project management skills i've acquired through my education
+          in the sciences and my managerial background from retail to efficiently solve problems and further my career.
+        </p>
       </div>
       <img class="w3-center" id="signature" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Louis_Jolliet_Signature.svg/2000px-Louis_Jolliet_Signature.svg.png"
         alt="signature placeholder">
@@ -125,11 +140,17 @@
             <h2 class="center light-green-text darken-2">
               <i class="material-icons">laptop</i>
             </h2>
-            <h5 class="center">Education & Jobs</h5>
+            <h5 class="center">Education</h5>
 
-            <p class="light">Shoreditch bespoke mumblecore 90's taiyaki etsy post-ironic. Intelligentsia single-origin coffee next level thundercats.
-              Vape tattooed VHS viral pop-up shaman retro prism. You probably haven't heard of them organic 8-bit, kinfolk
-              typewriter farm-to-table iPhone helvetica cold-pressed drinking vinegar franzen disrupt. </p>
+            <p class="light">
+              <strong>Rutgers, the State University of New Jersey New Brunswick, NJ</strong>
+              <br> Rutgers Coding Bootcamp - MERN Full Stack Web Development
+              <br> JAN - JUL 2018</p>
+            <p class="light">
+              <strong>Rutgers, the State University of New Jersey New Brunswick, NJ</strong>
+              <br> B.S. Applied Kinesiology and Health Minor in Psychology
+              <br> MAY 2017</p>
+
           </div>
         </div>
 
@@ -141,9 +162,21 @@
             </h2>
             <h5 class="center">Skills & Abilities</h5>
 
-            <p class="light">Franzen chia shoreditch chillwave leggings marfa organic semiotics fixie af microdosing squid mustache occupy
-              hexagon. Forage jean shorts small batch +1 hoodie. Gochujang snackwave sustainable blue bottle schlitz williamsburg
-              paleo gluten-free PBR&B adaptogen swag la croix locavore jianbing.</p>
+            <div>
+              <ul class="light list-unstyled">
+                <li>- The Browser: HTML5, CSS3, JavaScript, React.js, JQuery, Bootstrap, Handlebars.js</li>
+                <br>
+                <li>- Server Side: Node.js, Express.js, Templating Engines, Sessions, Creating APIs, MVC, User Authentication,
+                  ORM - Sequelize</li>
+                <br>
+                <li>- API Interactions: API data consuming, JSON, AJAX, Realtime Cloud Database via Firebase</li>
+                <br>
+                <li>- Databases: MySQL, MongoDB</li>
+                <br>
+                <li>- Dev Tools: Git, Github, Heroku</li>
+                <br>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -271,87 +304,87 @@
       </div>
 
       <h5 class="center-align">Class Projects</h5>
-       <!-- ROW 1-->
-       <div class="row">
-          <!-- CARD 1 -->
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="myimgs/head-196541_640.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" id="code-font">Psychic Game
-                  <i class="material-icons right">more_vert</i>
-                </span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">My Role
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Here is some more information about this project and my role.</p>
-                <p>
-                  <a href="https://rbruff.github.io/Psychic-Game/" target="_blank">Check it out</a>
-                </p>
-                <p>
-                  <a href="https://github.com/rbruff/Psychic-Game" target="_blank">GitHub Repo</a>
-                </p>
-              </div>
+      <!-- ROW 1-->
+      <div class="row">
+        <!-- CARD 1 -->
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="myimgs/head-196541_640.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4" id="code-font">Psychic Game
+                <i class="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">My Role
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Here is some more information about this project and my role.</p>
+              <p>
+                <a href="https://rbruff.github.io/Psychic-Game/" target="_blank">Check it out</a>
+              </p>
+              <p>
+                <a href="https://github.com/rbruff/Psychic-Game" target="_blank">GitHub Repo</a>
+              </p>
             </div>
           </div>
-  
-          <!-- CARD 2 -->
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="myimgs/woman-3040029_640.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" id="code-font">Shopping Game
-                  <i class="material-icons right">more_vert</i>
-                </span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">My Role
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Here is some more information about this project and my role.</p>
-                <p>
-                    <a href="https://rbruff.github.io/week-4-game/" target="_blank">Check it out</a>
-                </p>
-                <p>
-                    <a href="https://github.com/rbruff/week-4-game" target="_blank">GitHub Repo</a>
-                </p>
-              </div>
-            </div>
-          </div>
-  
-          <!-- card 3 -->
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="myimgs/shutterstock_297320345.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4" id="code-font">Trivia App
-                  <i class="material-icons right">more_vert</i>
-                </span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">My Role
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Here is some more information about this project and my role.</p>
-                <p>
-                  <a href="#">Check it out</a>
-                </p>
-                <p>
-                  <a href="#">GitHub Repo</a>
-                </p>
-              </div>
-            </div>
-          </div>
-  
         </div>
+
+        <!-- CARD 2 -->
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="myimgs/woman-3040029_640.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4" id="code-font">Shopping Game
+                <i class="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">My Role
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Here is some more information about this project and my role.</p>
+              <p>
+                <a href="https://rbruff.github.io/week-4-game/" target="_blank">Check it out</a>
+              </p>
+              <p>
+                <a href="https://github.com/rbruff/week-4-game" target="_blank">GitHub Repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="myimgs/shutterstock_297320345.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4" id="code-font">Trivia App
+                <i class="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">My Role
+                <i class="material-icons right">close</i>
+              </span>
+              <p>Here is some more information about this project and my role.</p>
+              <p>
+                <a href="#">Check it out</a>
+              </p>
+              <p>
+                <a href="#">GitHub Repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
     </div>
